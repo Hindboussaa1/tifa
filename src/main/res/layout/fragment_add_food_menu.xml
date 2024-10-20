@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/background_light"
+    tools:context=".ui.fragments.AddFoodMenuFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/toolbar"
+            app:titleTextColor="@color/royal_blue">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/left_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_gravity="start"
+                android:src="@drawable/back_icon" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/sms_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Add Food" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:id="@+id/page1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/foodImageView"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/ic_camera"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:id="@+id/uploadImageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Image"
+                    android:background="@drawable/button_bg"
+                    android:textColor="#ffffff"
+                    android:layout_below="@id/foodImageView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"/>
+
+                <EditText
+                    android:id="@+id/foodNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Food Title"
+                    android:inputType="text"
+                    android:layout_below="@id/uploadImageButton"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"/>
+
+                <EditText
+                    android:id="@+id/priceEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Price"
+                    android:inputType="number"
+                    android:layout_below="@id/foodNameEditText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"/>
+
+                <EditText
+                    android:id="@+id/caloriesEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Calories"
+                    android:inputType="text"
+                    android:layout_below="@id/priceEditText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"/>
+
+                <Button
+                    android:id="@+id/addFoodBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Food"
+                    android:background="@drawable/button_bg"
+                    android:textColor="#ffffff"
+                    android:layout_below="@id/caloriesEditText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="32dp"/>
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="@style/CustomProgressBarStyle"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true"
+                    android:elevation="20dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home"
+        android:title="Home" />
+
+    <item android:id="@+id/orders"
+        android:title="Orders" />
+
+    <item android:id="@+id/healthDetails"
+        android:title="Health Details" />
+
+    <item android:id="@+id/restaurants"
+        android:title="Restaurants" />
+
+    <item android:id="@+id/users"
+        android:title="Users" />
+
+</menu>

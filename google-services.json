@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "548214473331",
+    "firebase_url": "https://healthi-146d8-default-rtdb.firebaseio.com",
+    "project_id": "healthi-146d8",
+    "storage_bucket": "healthi-146d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548214473331:android:c5fce680b4ac43630ba006",
+        "android_client_info": {
+          "package_name": "com.admin.healthi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "548214473331-er9n78dnj8fegf16nc7vi9iii3dsnjba.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.admin.healthi",
+            "certificate_hash": "815513c5fb0b6b897487df3bf72c7fb54a2b3048"
+          }
+        },
+        {
+          "client_id": "548214473331-i3pvpdmr3faprta6jegjc68hjkgbh0po.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfd-_PVrO8b_pQDeesJohgb30fq3IrSSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "548214473331-i3pvpdmr3faprta6jegjc68hjkgbh0po.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548214473331:android:0b1e03a4aead0e080ba006",
+        "android_client_info": {
+          "package_name": "com.restaurant.healthirestaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "548214473331-blllcmoetbee1tv5togsclqc3h31d98c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.restaurant.healthirestaurant",
+            "certificate_hash": "815513c5fb0b6b897487df3bf72c7fb54a2b3048"
+          }
+        },
+        {
+          "client_id": "548214473331-i3pvpdmr3faprta6jegjc68hjkgbh0po.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfd-_PVrO8b_pQDeesJohgb30fq3IrSSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "548214473331-i3pvpdmr3faprta6jegjc68hjkgbh0po.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

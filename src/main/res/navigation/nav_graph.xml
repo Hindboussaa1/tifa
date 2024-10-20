@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.restaurant.healthirestaurant.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_addFoodMenu"
+            app:destination="@id/addFoodMenu" />
+        <action
+            android:id="@+id/action_homeFragment_to_viewFoodListFragment"
+            app:destination="@id/viewFoodListFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_setFoodPlanFragment"
+            app:destination="@id/setFoodPlanFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addFoodMenu"
+        android:name="com.restaurant.healthirestaurant.ui.fragments.AddFoodMenuFragment"
+        android:label="fragment_add_food_menu"
+        tools:layout="@layout/fragment_add_food_menu" >
+        <action
+            android:id="@+id/action_addFoodMenu_to_homeFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewFoodListFragment"
+        android:name="com.restaurant.healthirestaurant.ui.fragments.ViewFoodListFragment"
+        android:label="fragment_view_food_list"
+        tools:layout="@layout/fragment_view_food_list" >
+        <action
+            android:id="@+id/action_viewFoodListFragment_to_homeFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setFoodPlanFragment"
+        android:name="com.restaurant.healthirestaurant.ui.fragments.SetFoodPlanFragment"
+        android:label="SetFoodPlanFragment"
+        tools:layout="@layout/fragment_set_food_plan">
+        <action
+            android:id="@+id/action_setFoodPlanFragment_to_homeFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+</navigation>
